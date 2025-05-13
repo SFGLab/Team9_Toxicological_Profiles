@@ -1,9 +1,34 @@
 # Team9_Toxicological_Profiles
 
-## Important links
+## Important Links
 * link to the [dataset](https://drive.google.com/drive/folders/195KAyBS80Qdu5-uTHUWGVScDd4S7jBmM)
 * [introduction to the problem](https://docs.google.com/presentation/d/1WYebbOqxnCUWdD_irGYNAFhBpz03HkJezKHb4039Ud0/edit#slide=id.g357624754e3_0_69)
 * Simmilar solutions: [https://paperswithcode.com/sota/drug-discovery-on-tox21](https://paperswithcode.com/sota/drug-discovery-on-tox21)
+
+## Dataset Description
+The [dataset](https://drive.google.com/drive/folders/195KAyBS80Qdu5-uTHUWGVScDd4S7jBmM) is based on the Tox21 Dataset merged with SMILES and IDs from Pubchem.
+* **SAMPLE_DATA_TYPE**: distinguish channels:
+   * *cell_red*: Autofluorescence of molecules
+   * *agonist(1-3)*:
+   * *antagonist(1-3)*:
+   * *viability(1-3)*:
+where 1-3 indicates measurement repetition.
+
+* **DATA(1-14)**: measurment of fluorescence in specific experiment,
+* **CONC(1-14)**: concentration in $\mu$M at which DATA is measured,
+where each DATA is measured at a specific CONC indicated by id (ie, DATA1 is measured at CONC1, DATA2 is measured at CONC2, etc),
+
+* **canonical_smiles**:
+* **similarity_order**:
+* **iupac_name**:
+
+Information for tracking measurement or molecule source for data check PUBCHEM_CID, TOX21_ID, SAMPLE_NAME, PUBCHEM_SID.
+* **CURVE_CLASS2**: Tox21 group description of each measurment series (DATA/CONC 1-15) based on Hill equation
+* **PubChemFingerprint**:
+* **similarity_order**:
+
+
+
 
 ## Alternative Solutions
 Based on the [Tox21 Dataset](https://tripod.nih.gov/pubdata/) there is [Therapeutics Data Commons (TDC)](https://arxiv.org/pdf/2102.09548v2) dataset, and [Tox24 Chalange](https://ochem.eu/static/challenge-data.do) dataset.<be>
