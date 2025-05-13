@@ -76,14 +76,12 @@ Tox24:
 ## Workflow:
 ```mermaid
 flowchart TD;
-    A[Dataset Creation<br>for EER Toxicity prediction<be>based on Tox21 assays: tox21-err-p1, tox21-spec-hek293-p1<be>and PubChem standarysation] -->|Data Cleaning| B(Mearged Dataset);
-    B --> C[Model Preselection];
+    A[Dataset Creation<br>for EER Toxicity prediction<be>based on Tox21 assays: tox21-err-p1, tox21-spec-hek293-p1<be>and PubChem standarysation] -->|Data Cleaning| B@{shape: cyl, label: Mearged Dataset};
+    B --> C@{shape: trap-b, label: Model Preselection};
     C --> D[Traditional Machine Learning];
     C --> E[Graph Neural Network];
     C --> F[Gradient boosted aproaches];
-    F --> G[Model Benchmarking];
-    D --> G;
-    E --> G;
+    D & E & F --> G@{ shape: diamond, label: Model Benchmarking};
     G --> H[Model training on the full dataset];
     H --> I[Based on the best model outcomes:<br>**Prediction of toxicophoric groups**<br>a functional groups with the potential of inducing toxicity];
 ```
