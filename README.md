@@ -1,11 +1,16 @@
 # Team9_Toxicological_Profiles
 
+
 ## Important Links
 * link to the [dataset](https://drive.google.com/drive/folders/195KAyBS80Qdu5-uTHUWGVScDd4S7jBmM)
 * [introduction to the problem](https://docs.google.com/presentation/d/1WYebbOqxnCUWdD_irGYNAFhBpz03HkJezKHb4039Ud0/edit#slide=id.g357624754e3_0_69)
 * Simmilar solutions: [https://paperswithcode.com/sota/drug-discovery-on-tox21](https://paperswithcode.com/sota/drug-discovery-on-tox21)
 
-## Dataset
+## Dataset 
+The dataset has been created to allow for learning models based on EER toxicity in the following manner:
+Input: SMILES (string) and concentration (float).
+Output (4-dimensional vector): DATA corresponding to agonist, DATA corresponding to antagonist, DATA corresponding to viability, and DATA corresponding to autofluorescence at the provided concentration.
+
 ### Columns Description
 The [dataset](https://drive.google.com/drive/folders/195KAyBS80Qdu5-uTHUWGVScDd4S7jBmM) is based on the Tox21 Dataset merged with SMILES and IDs from Pubchem.
 * **SAMPLE_DATA_TYPE**: distinguish channels:
