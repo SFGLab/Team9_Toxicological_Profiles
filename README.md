@@ -11,7 +11,7 @@ The [dataset](https://drive.google.com/drive/folders/195KAyBS80Qdu5-uTHUWGVScDd4
    * *cell_red*: Autofluorescence of molecules
    * *agonist(1-3)*:
    * *antagonist(1-3)*:
-   * *viability(1-3)*:
+   * *viability(1-3)*:<be>
 where 1-3 indicates measurement repetition.
 
 * **DATA(1-14)**: measurment of fluorescence in specific experiment,
