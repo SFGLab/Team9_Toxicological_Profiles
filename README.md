@@ -5,7 +5,8 @@
 * [introduction to the problem](https://docs.google.com/presentation/d/1WYebbOqxnCUWdD_irGYNAFhBpz03HkJezKHb4039Ud0/edit#slide=id.g357624754e3_0_69)
 * Simmilar solutions: [https://paperswithcode.com/sota/drug-discovery-on-tox21](https://paperswithcode.com/sota/drug-discovery-on-tox21)
 
-## Dataset Description
+## Dataset
+### Columns Description
 The [dataset](https://drive.google.com/drive/folders/195KAyBS80Qdu5-uTHUWGVScDd4S7jBmM) is based on the Tox21 Dataset merged with SMILES and IDs from Pubchem.
 * **SAMPLE_DATA_TYPE**: distinguish channels:
    * *cell_red*: Autofluorescence of molecules
@@ -14,8 +15,8 @@ The [dataset](https://drive.google.com/drive/folders/195KAyBS80Qdu5-uTHUWGVScDd4
    * *viability(1-3)*:<be>
 where 1-3 indicates measurement repetition.
 
-* **DATA(1-14)**: measurment of fluorescence in specific experiment,
-* **CONC(1-14)**: concentration in $\mu$M at which DATA is measured,
+* **DATA(1-14)**: measurement of fluorescence in a specific experiment, it contains float values, positive and negative. None values indicate a lack of measurement
+* **CONC(1-14)**: concentration in $\mu$M at which DATA is measured, it consists of positive float values, with None values in case of a lack of measurement
 where each DATA is measured at a specific CONC indicated by id (ie, DATA1 is measured at CONC1, DATA2 is measured at CONC2, etc),
 
 * **canonical_smiles**:
@@ -23,7 +24,7 @@ where each DATA is measured at a specific CONC indicated by id (ie, DATA1 is mea
 * **iupac_name**:
 
 Information for tracking measurement or molecule source for data check PUBCHEM_CID, TOX21_ID, SAMPLE_NAME, PUBCHEM_SID.
-* **CURVE_CLASS2**: Tox21 group description of each measurment series (DATA/CONC 1-15) based on Hill equation
+* **CURVE_CLASS2**: Tox21 group description of each measurement series (DATA/CONC 1-15) based on the Hill equation or set manually.
 * **PubChemFingerprint**:
 * **similarity_order**:
 
