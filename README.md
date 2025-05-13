@@ -64,7 +64,7 @@ Tox24:
 
 ```mermaid
 flowchart TD;
-    A[Dataset Creation<br>for EER Toxicity prediction<be>based on Tox21 assays: tox21-err-p1, tox21-spec-hek293-p1<be>and PubChem standarysation)] -->|Data Cleaning| B(Mearged Dataset);
+    A[Dataset Creation<br>for EER Toxicity prediction<be>based on Tox21 assays: tox21-err-p1, tox21-spec-hek293-p1<be>and PubChem standarysation] -->|Data Cleaning| B(Mearged Dataset);
     B --> C{Model Preselection };
     C --> D[Traditional Machine Learning];
     C --> E[Graph Neural Network];
