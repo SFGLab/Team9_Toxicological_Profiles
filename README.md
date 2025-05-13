@@ -73,5 +73,5 @@ flowchart TD;
     D --> G;
     E --> G;
     G --> H[Model training on the full dataset];
-    H --> I[Based on the best model outcomes: Prediction of toxicophoric groups<br>a functional groups with the potential of inducing toxicity];
+    H --> I[Based on the best model outcomes:<br>**Prediction of toxicophoric groups**<br>a functional groups with the potential of inducing toxicity];
 ```
