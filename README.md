@@ -33,7 +33,7 @@ where each DATA is measured at a specific CONC indicated by id (ie, DATA1 is mea
 * **similarity_order**:
 * **iupac_name**:
 
-Information for tracking measurement or molecule source for data check PUBCHEM_CID, TOX21_ID, SAMPLE_NAME, PUBCHEM_SID.
+Information for tracking measurement or molecule source for data check: PUBCHEM_CID, TOX21_ID, SAMPLE_NAME, PUBCHEM_SID.
 * **CURVE_CLASS2**: Tox21 group description of each measurement series (DATA/CONC 1-15) based on the Hill equation or set manually.
 * **PubChemFingerprint**:
 * **similarity_order**:
@@ -77,7 +77,7 @@ Tox24:
 ```mermaid
 flowchart TD;
     A[Dataset Creation<br>for EER Toxicity prediction<be>based on Tox21 assays: tox21-err-p1, tox21-spec-hek293-p1<be>and PubChem standarysation] -->|Data Cleaning| B(Mearged Dataset);
-    B --> C{Model Preselection };
+    B --> C[Model Preselection];
     C --> D[Traditional Machine Learning];
     C --> E[Graph Neural Network];
     C --> F[Gradient boosted aproaches];
