@@ -61,3 +61,17 @@ Tox24:
   * algorithms:
     1. Parameter search via randomized grid search CV,
     2. Extreme Gradient Boosting (XGBoost)
+
+```mermaid
+flowchart TD;
+    A[Dataset Creation<br>for EER Toxicity prediction<br>based on Tox21 assays: tox21-err-p1, tox21-spec-hek293-p1<br>and PubChem standarysation] -->|Data Cleaning| B(Mearged Dataset);
+    B --> C{Model Preselection };
+    C --> D[Traditional Machine Learning];
+    C --> E[Graph Neural Network];
+    C --> F[Gradient boosted aproaches];
+    F --> G[Model Benchmarking];
+    D --> G;
+    E --> G;
+    G --> H[Model training on the full dataset];
+    H --> I[Based on the best model outcomes: Prediction of toxicophoric groups<br>a functional groups with the potential of inducing toxicity];
+```
