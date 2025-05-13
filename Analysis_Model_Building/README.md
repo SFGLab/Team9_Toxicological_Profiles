@@ -102,6 +102,10 @@ Balanced Accuracy: Average of sensitivity (recall) and specificity. Good for imb
 - Precision, Recall (Sensitivity), Specificity.
 - Confusion Matrix: To understand the types of errors (false positives, false negatives). False negatives (predicting a toxic compound as non-toxic) are often more critical to avoid.
 
+Since those metrics are not suitable for a multi-regression problem, we will evaluate the models using **Mean Absolute Error**.
+
+
+
 ---
 
 We are devided the paths and work on different aspects, soon we will reach at the fantastic result.
