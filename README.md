@@ -91,11 +91,12 @@ flowchart TD;
 ```mermaid
 flowchart TD;
     subgraph Done
-        A(Database creation) --> B(Creation of Descriptions for the Hackation Participants);
+        A("Database creation<br>based on the simmilarity matrix<br>*") --> B(Creation of Descriptions for the Hackation Participants);
         A --> C(EDA)
     end
 
     subgraph in progress
      A --> D(Model creation);
+     A --> E(Consideration of a knkown Hill curve class in data split)
     end
 ```
