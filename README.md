@@ -91,7 +91,7 @@ flowchart TD;
 ```mermaid
 flowchart TD;
     subgraph Done
-        A("Database creation<br>based on the simmilarity matrix<br>*") --> B(Creation of Descriptions for the Hackation Participants);
+        A("Database creation<br>based on the simmilarity matrix") --> B(Creation of Descriptions for the Hackation Participants);
         A --> C(EDA)
     end
 
