@@ -85,3 +85,17 @@ flowchart TD;
     G --> H[Model training on the full dataset];
     H --> I[Based on the best model outcomes:<br>**Prediction of toxicophoric groups**<br>a functional groups with the potential of inducing toxicity];
 ```
+## Hackaton Progress
+![[Alt Text](image_url)](https://media.makeameme.org/created/im-so-lonely-0f26ee5e6f.jpg)
+
+```mermaid
+flowchart TD;
+    subgraph Done
+        A(Database creation) --> B(Creation of Descriptions for the Hackation Participants);
+        A --> C(EDA)
+    end
+
+    subgraph in progress
+     A --> D(Model creation);
+    end
+```
