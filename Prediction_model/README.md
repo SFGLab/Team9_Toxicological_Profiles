@@ -164,5 +164,5 @@ Okay, let's consolidate the entire stepwise process for your toxicity prediction
         *   Tune optimizer parameters (learning rate, batch size).
         *   Re-train and re-evaluate.
 18. **Result:**
-19. - R2 score - 0.84
+    - R2 score - 0.84
     - MAE = 0.29
