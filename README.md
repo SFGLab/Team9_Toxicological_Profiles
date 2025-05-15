@@ -15,6 +15,10 @@ Screening and identifying environmental compounds that perturb the EER signaling
 ## Conclusions
 ### Future directions
 ## References
+[1] Aubert G, Vega RB, Kelly DP. Perturbations in the gene regulatory pathways controlling mitochondrial energy production in the failing heart. In: Zhu H, Xia M, editors. Biochimica et Biophysica Acta (BBA) - Molecular Cell Research. Volume 1833, Issue 4. 1st ed. Elsevier; 2013. p. 840-847. https://doi.org/10.1016/j.bbamcr.2012.08.015.
+[2] Audet-walsh, É., Giguére, V. The multiple universes of estrogen-related receptor α and γ in metabolic control and related diseases. Acta Pharmacol Sin 36, 51–61 (2015). https://doi.org/10.1038/aps.2014.121
+[3] Huang R. A Quantitative High-Throughput Screening Data Analysis Pipeline for Activity Profiling. In: Zhu H, Xia M, editors. High-Throughput Screening Assays in Toxicology. Methods in Molecular Biology. 1473. 1 ed: Humana Press; 2016
+
 
 ## Important Links
 * link to the [dataset](https://drive.google.com/drive/folders/195KAyBS80Qdu5-uTHUWGVScDd4S7jBmM)
