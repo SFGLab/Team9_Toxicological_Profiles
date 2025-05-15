@@ -1,5 +1,20 @@
 # Team9_Toxicological_Profiles
+## Aim
+Machine learning tool development for modeling concentration-activity profiles of estrogen-related receptors
 
+## Background
+Estrogen related receptors (ERRs) are one of the first orphan nuclear receptors identified.[1] ERRs are required for high-energy production in response to the environmental and physiological challenges. They play an important role in the control of cellular energy, including mitochondrial biogenesis, gluconeogenesis, and oxidative phosphorylation[1, 2], with signaling implicated in metabolic disorders like type 2 diabetes[2], with EER-alpha (subfamily of EERs) identified as an adverse marker for breast cancer progression.[3]
+Screening and identifying environmental compounds that perturb the EER signaling pathways could provide information for potential preventive measures in treating the mentioned metabolic diseases.[1] Predicting their activity continuously allows for a quantitative assessment of receptor activation or inhibition, reflecting real biological responses more accurately than binary (toxic/nontoxic) labels, additionally allowing for information on dose-response that is not present in binary toxicity prediction.
+
+## Contributors
+- Marek Sokołowski
+-
+
+## Methods
+## Results
+## Conclusions
+### Future directions
+## References
 
 ## Important Links
 * link to the [dataset](https://drive.google.com/drive/folders/195KAyBS80Qdu5-uTHUWGVScDd4S7jBmM)
@@ -86,7 +101,6 @@ flowchart TD;
     H --> I[Based on the best model outcomes:<br>**Prediction of toxicophoric groups**<br>a functional groups with the potential of inducing toxicity];
 ```
 ## Hackaton Progress
-![[Alt Text](image_url)](https://media.makeameme.org/created/im-so-lonely-0f26ee5e6f.jpg)
 
 ```mermaid
 flowchart TD;
