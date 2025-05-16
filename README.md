@@ -9,6 +9,7 @@ Screening and identifying environmental compounds that perturb the EER signaling
 ## Contributors
 - Marek Sokołowski
 - Ritwik Ganguly
+- Nilabja Bhattacharjee
 
 ## Methods
 ## Results
