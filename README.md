@@ -12,6 +12,33 @@ Screening and identifying environmental compounds that perturb the EER signaling
 - Nilabja Bhattacharjee
 
 ## Methods
+###Data Preprocessing and Graph Construction
+Molecular data were obtained in SMILES format, each corresponding to a compound tested under varying concentrations for biological activity inhibition (e.g., from the Tox21 dataset). Each molecule was converted into a graph structure using RDKit, where atoms represent nodes and bonds represent edges. For each compound, a graph was constructed using the smiles2graph utility, and the resulting graphs were encapsulated in torch_geometric.data.Data objects.
+
+Each node (atom) was featurized using the atom_features function, which encodes atomic number, degree, hybridization, aromaticity, and other physicochemical properties into a numerical feature vector. Edge indices were defined based on molecular bonds, but no explicit edge features were used.
+
+To incorporate dose-dependent effects, the concentration value (log-transformed) was included as an additional scalar node-level feature, broadcast across all nodes in the graph. The final node feature dimension thus includes both structural atom-level information and experimental dosage context.
+
+The dataset was split into training (80%), validation (10%), and test (10%) sets using stratified shuffling to preserve label distributions. The torch_geometric.loader.DataLoader was used to batch graphs with variable sizes efficiently for GNN processing. All features and targets were converted to float32 and normalized where necessary.
+
+###Graph Neural Network Architecture
+We employed a Graph Convolutional Network (GCN) architecture implemented using PyTorch Geometric. The model consists of:
+
+Three stacked GCNConv layers with hidden dimensions of 64, 32, and 16, each followed by ReLU activation.
+
+A global_mean_pool operation aggregates node-level embeddings into a graph-level representation.
+
+Two fully connected (linear) layers map the pooled graph embedding to the final scalar output, representing the predicted % inhibition.
+
+The model was trained to perform regression, using the Mean Squared Error (MSE) loss between predicted and experimental inhibition values.
+
+###Training Procedure
+The model was trained using the Adam optimizer with an initial learning rate of 1e-3 and a weight decay of 5e-4. A ReduceLROnPlateau scheduler was used to dynamically adjust the learning rate based on validation loss stagnation. Early stopping was employed with a patience of 20 epochs to prevent overfitting.
+
+Each training epoch consisted of a forward pass, loss computation, backpropagation, and parameter update. Model performance was monitored on the validation set after each epoch. The best-performing model based on validation loss was checkpointed and subsequently used for final evaluation on the test set.
+
+
+
 ## Results
 ## Conclusions
 ### Future directions
